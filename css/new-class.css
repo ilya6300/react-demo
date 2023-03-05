@@ -1,0 +1,6 @@
+.hidden {
+    display: none;
+}
+.remove-scroll-y {
+    overflow-y: hidden;
+}

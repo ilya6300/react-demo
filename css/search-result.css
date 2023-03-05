@@ -1,0 +1,33 @@
+.mast-help-search-tag {
+min-width: 100%;
+display: flex !important;
+overflow-x: auto;
+}
+.tag-scroll-bar {
+white-space: nowrap;
+}
+.mast-help-search-result {
+    margin: 15px 0;
+    padding: 20px 10px;
+    background: rgb(54 120 202 / 6%);
+    border-radius: 5px;
+}
+.mast-help-search-result--title {
+    color: rgb(15 96 197);
+    font-size: 20px;
+}
+.mast-help-search-result--text {
+    margin: 15px 0 25px;
+}
+.tag {
+    border: 2px solid var(--mastBlue);
+    /* background: rgba(18, 110, 230, 0.123); */
+    border-radius: 6%;
+    padding: 5px 8px;
+    margin-right: 15px;
+    transition: background 0.2s ease-in;
+    cursor: pointer;
+}
+.tag:hover {
+    background: var(--mastBlue);
+}
