@@ -1,0 +1,21 @@
+.sport-devace-container {
+    max-width: 450px;
+    background: #000;
+    border: 3px solid rgba(233, 5, 5, 0.932);
+    border-radius: 20px;
+    color: rgba(233, 5, 5, 0.932);
+    padding: 15px 20px;
+}
+.radio-btn-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    
+}
+.sport-radio-btn-group {
+color: azure;
+font-size: 18px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}

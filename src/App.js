@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Calc from "./components/Calc";
+import TodoWidget from "./components/todo/TodoWidget";
 
-function App() {
+import "./css/calc.css";
+import SportDevace from "./components/sport/SportDevace";
+
+function App(sortedTodos) {
+  // const [todos, setTodos] = useState([
+  //   {
+  //     id: 1,
+  //     title: "До конца месяца",
+  //     body: "Завершить планировщик и разобраться с api",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "До конца месяца",
+  //     body: "Завершить планировщик и тут текст",
+  //   },
+  // ]);
+
+  // Можно написать второй список и добавить его return как
+  // <TodoList todos={todos2} title="Второй планировщик появится" />
+  // const [todos2, setTodos2] = useState([
+  //   {
+  //     id: 1,
+  //     title: "Это второй список",
+  //     body: "но он закоментирован",
+  //   }]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {/* <Calc /> */}
+
+      {/* <TodoList
+        //  todos={todos}
+        title="Планировщик задач от Илюхи"
+        
+      /> */}
+      {/* <TodoWidget title='Планировщик от Илюхи'/> */}
+      <SportDevace />
     </div>
   );
 }

@@ -1,0 +1,49 @@
+.todo-container {
+  width: 450px;
+  height: 100%;
+  background: black;
+  color: azure;
+  padding: 35px 25px;
+}
+.todo {
+  display: flex;
+  align-items: center;
+
+  border-bottom: 2px solid azure;
+}
+.todo-text-container {
+  width: 80%;
+}
+.todo-text {
+  text-align: start;
+}
+.todo-bottom {
+  height: 50px;
+  margin: auto;
+}
+.Button-Todo-Form {
+  width: 120px;
+  height: 30px;
+  border: 2px solid rgba(7, 121, 214, 0.87);
+  border-radius: 4px;
+  color: rgba(7, 121, 214, 0.87);
+  margin: 5px 0 0 75%;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 5px 75%;
+}
+
+.todo-enter {
+  transform: translateX(-1200px);
+}
+.todo-enter-active {
+  transform: translateX(0);
+  transition: all 500ms;
+}
+.todo-exit {
+  opacity: 1;
+}
+.todo-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}

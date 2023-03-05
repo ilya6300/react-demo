@@ -1,0 +1,12 @@
+.App-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    align-content: center;
+    background: #60c6d3c2;
+    color: aliceblue;
+}
+.App-headder-img {
+    width: 67px;
+    height: 67px;
+}

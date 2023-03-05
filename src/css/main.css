@@ -1,0 +1,74 @@
+@import url(./fonts.css);
+* {
+    color: black;
+    letter-spacing: 0.04rem;
+}
+.page {
+    background: var(--bobyColor);
+}
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1280px;
+    margin: 120px auto 15px auto;
+}
+.main {
+    overflow-y: auto;
+}
+#container-result {
+    overflow-y: auto;
+}
+#search-container {
+    display: flex;
+    gap: 15px;
+}
+#search-input {
+    width: 88%;
+    height: 50px;
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid rgba(179, 174, 174, 0.589);
+    border-radius: 5px;
+}
+#search-input::placeholder {
+ color: rgba(179, 174, 174, 0.589);   
+}
+#search-btn {
+    width: 15%;
+    background: var(--mastBlue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+}
+.search-btn-text {
+    color: aliceblue;
+    font-size: 20px;
+}
+#search-btn:hover {
+    background: rgba(156, 165, 211, 0.842);
+}
+.search-btn-img {
+    width: 30px;
+    filter: opacity(0.4);
+    display: none;
+}
+
+/* Кнопка наверх */
+
+#button-up {
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    background: var(--mastBlue);
+    color: aliceblue;
+    font-size: 28px;
+    padding: 15px 35px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+    transition: padding 1s;
+    display: none;
+}
+#button-up:hover {
+    padding: 55px 35px;
+}
