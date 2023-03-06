@@ -51,12 +51,9 @@ const RowProgramPlanka = ({ collection, plancaTitle }) => {
       <span className="program-row-text-total program-row-planca">
         {plancaTitle} {plancaAmountonce} подхода, текущий {plancaAmounttime} сек
       </span>
-      <img
-        className="program-row-img"
-        alt="Ввод"
-        src={image}
-        onClick={plancaF}
-      />
+      <button className="program-row-btn" onClick={plancaF} onTouchCancel={plancaF}>
+        <img className="program-row-img" alt="Ввод" src={image} />
+      </button>
       <span className="program-row-text-balance program-row-planca_all">
         осталось: {plancaAllTime} сек.
       </span>

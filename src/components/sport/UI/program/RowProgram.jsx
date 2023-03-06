@@ -9,8 +9,8 @@ const RowProgram = ({ balance, total, training }) => {
   );
 
   const pressF = () => {
-    console.log(pressBalanceComponent)
-    console.log(balance)
+    console.log(pressBalanceComponent);
+    console.log(balance);
     if (pressBalanceComponent - pressInputComponent > 0) {
       setPressBalanceComponent(pressBalanceComponent - pressInputComponent);
     } else {
@@ -31,12 +31,9 @@ const RowProgram = ({ balance, total, training }) => {
         value={pressInputComponent}
         onChange={(e) => setPressInputComponent(e.target.value)}
       />
-      <img
-        className="program-row-img"
-        alt="Ввод"
-        src={image}
-        onClick={pressF}
-      />
+      <button className="program-row-btn" onClick={pressF} onTouchCancel={pressF}>
+        <img className="program-row-img" alt="Ввод" src={image} />
+      </button>
       <span className="program-row-text-balance">
         осталось: {pressBalanceComponent}
       </span>

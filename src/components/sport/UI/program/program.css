@@ -16,6 +16,9 @@
     width: 32px;
     cursor: pointer;
 }
+.program-row-btn {
+    background: none;
+}
 .program-row-text-total {
     color: azure;
     font-size: 18px;
