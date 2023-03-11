@@ -31,13 +31,13 @@ const RowProgram = ({ balance, total, training }) => {
         value={pressInputComponent}
         onChange={(e) => setPressInputComponent(e.target.value)}
       />
-      <button
+      {/* <button
         className="program-row-btn"
         onClick={pressF}
         onTouchStart={pressF}
-      >
-        <img className="program-row-img" alt="Ввод" src={image} />
-      </button>
+      > */}
+        <img         onClick={pressF} className="program-row-img" alt="Ввод" src={image} />
+      {/* </button> */}
       <span className="program-row-text-balance">
         осталось: {pressBalanceComponent}
       </span>
