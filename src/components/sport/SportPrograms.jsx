@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import MaleLite from "./MaleLite";
 import MaleMedium from "./MaleMedium";
 import MaleHard from "./MaleHard";

@@ -9,7 +9,6 @@ const SportDevace = () => {
 
   const hendleSportComponent = (componentProgram) => {
     setComponentPropgram(componentProgram);
-    // console.log(componentProgram);
   };
 
   return (
